@@ -37,8 +37,9 @@ body{
   }
 
 .color{
-    height:1.5 rem;
-    width:3rem;
+  height: 2rem;
+  width:4rem;
+  border:1px solid;
 }
 .lightpink{
     background-color: lightpink;
@@ -74,7 +75,7 @@ body{
     position: absolute;
     top:calc((100vh - 50vh)/2);
     left:calc((100vw - 45vw)/2);
-    display: flex;
+    display: none;
   }
   
   textarea{
@@ -102,7 +103,9 @@ body{
     width:38%;
   }
 
-
+.active{
+  border:5px red solid;
+}
 
 
 
