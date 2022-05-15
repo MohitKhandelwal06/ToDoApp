@@ -138,5 +138,29 @@ height: 1rem;
 
 .main-cont{
     display:flex;
-    flex-flow: row-wrap;
+    flex-wrap:wrap;
+    justify-content: space-around;
   }
+
+.howToUse{
+  color:white;
+}
+.howToUse:hover{
+  background-color: black;
+}
+.dismis{
+  width: 25%;
+  margin-left:38%;
+}
+.dismis:hover{
+  background-color:whitesmoke;
+}
+.howToUsePopUp{
+  height:50vh;
+    width:45vw;
+    background-color: #dfe4ea;
+    position: absolute;
+    top:calc((100vh - 50vh)/2);
+    left:calc((100vw - 45vw)/2);
+    display: none;
+}

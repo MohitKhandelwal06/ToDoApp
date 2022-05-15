@@ -115,3 +115,22 @@ for(let i=0;i<toolBoxColors.length;i++){
 }
 
 
+
+
+
+
+
+
+
+
+
+let howToUse=document.querySelector(".howToUseButton");
+let howToUsePopUp=document.querySelector(".howToUsePopUp");
+let dismisButton=document.querySelector(".dismis");
+howToUse.addEventListener('click',function(){
+    howToUsePopUp.style.display="block";
+});
+
+dismisButton.addEventListener('click',function(){
+    howToUsePopUp.style.display="none";
+});
