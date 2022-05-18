@@ -193,7 +193,7 @@ function handleLock(ticket,id){
     let lockBtnActive=false;
     lockBtn.addEventListener('click',function(){
         if(!lockBtnActive){
-            lockBtn.innerHTML=`Click on button after editing &nbsp&nbsp&nbsp<i class="fa-solid fa-lock-open"></i>`;
+            lockBtn.innerHTML=`Click on lock after editing &nbsp&nbsp&nbsp<i class="fa-solid fa-lock-open"></i>`;
             taskArea.contentEditable=true;
         }else{
             lockBtn.innerHTML=`Click on lock to edit &nbsp&nbsp&nbsp<i class="fa-solid fa-lock"></i>`;
@@ -211,8 +211,14 @@ function handleLock(ticket,id){
 let howToUse=document.querySelector(".howToUseButton");
 let howToUsePopUp=document.querySelector(".howToUsePopUp");
 let dismisButton=document.querySelector(".dismis");
+let isActive=false;
 howToUse.addEventListener('click',function(){
-    howToUsePopUp.style.display="block";
+    if(!isActive){
+        howToUsePopUp.style.display="block";
+    }else{
+        howToUsePopUp.style.display="none";
+    }
+    isActive=!isActive;
 });
 
 dismisButton.addEventListener('click',function(){

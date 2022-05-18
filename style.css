@@ -132,15 +132,9 @@ height: 1rem;
   font-size: 1.5rem;
   outline:none;
   overflow-wrap:break-word;
+  overflow-y: auto;
 }
 
-
-.edit-lock{
-  position: sticky;
-  /* left: 2px; */
-  bottom: 0px;
-  
-}
 
 .main-cont{
     display:flex;
