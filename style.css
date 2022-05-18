@@ -111,7 +111,8 @@ body{
   height:12rem;
   width:15rem;
   background-color: #f1f2f6;
-  border:1px solid;
+  border:1px solid ;
+  border-radius:2px;
   margin:1rem;
 }
 
@@ -127,14 +128,19 @@ height: 1rem;
 }
 
 .task-area{
-  height: calc(100% - 1rem - 2rem);
+  height: calc(100% - 1rem - 2rem - 2rem);
   font-size: 1.5rem;
   outline:none;
   overflow-wrap:break-word;
 }
 
 
-
+.edit-lock{
+  position: sticky;
+  /* left: 2px; */
+  bottom: 0px;
+  
+}
 
 .main-cont{
     display:flex;
